@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches de entorno y herramientas
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+ENV/
+
+# Archivos de entorno y credenciales
+.env
+*.local
+
+# Datos generados en runtime
+*.log
+iot_sensor_data.csv
+docker/data/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

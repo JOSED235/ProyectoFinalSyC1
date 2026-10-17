@@ -1,0 +1,18 @@
+# syntax=docker/dockerfile:1
+FROM python:3.11-slim
+
+WORKDIR /app
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+RUN pip install --no-cache-dir \
+    paho-mqtt==2.1.0 \
+    pandas==2.2.2 \
+    numpy==1.26.4 \
+    python-dotenv==1.0.1
+
+COPY src/ /app/src/
+COPY data/ /app/data/
+
+CMD ["python", "src/simulator.py"]
