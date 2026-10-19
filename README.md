@@ -1,4 +1,4 @@
-# 🌿 AgroIoT & Machine Learning: Sistema de Monitoreo Agroclimático en Tiempo Real
+# AgroIoT & Machine Learning: Sistema de Monitoreo Agroclimático en Tiempo Real
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
@@ -13,7 +13,7 @@ El sistema cubre desde la telemetría distribuida de sensores y mensajería Publ
 
 ---
 
-## 📌 Contexto del Proyecto y Problemática
+## Contexto del Proyecto y Problemática
 
 El cambio climático y la variabilidad microclimática en regiones tropicales impactan directamente el rendimiento agrícola:
 * **Café (*Coffea arabica*):** Requiere un equilibrio estricto de temperatura (18 °C – 22 °C), humedad (70% – 80%) y pH ácido (5.0 – 5.5). Temperaturas superiores a 25 °C provocan estrés térmico y aceleran de forma perjudicial la maduración del grano, deteriorando la calidad en taza.
@@ -23,7 +23,7 @@ Este proyecto implementa una infraestructura telemática robusta para sensar, tr
 
 ---
 
-## 🏗️ Arquitectura de la Solución
+## Arquitectura de la Solución
 
 ```text
 ┌───────────────────────┐
@@ -55,7 +55,7 @@ Este proyecto implementa una infraestructura telemática robusta para sensar, tr
 
 ---
 
-## 🧪 Variables Sensadas y Umbrales Críticos
+## Variables Sensadas y Umbrales Críticos
 
 | Variable Agroclimática | Cultivo | Rango Óptimo | Umbral Crítico Inferior | Umbral Crítico Superior | Dispositivo Típico |
 | :--- | :--- | :---: | :---: | :---: | :--- |
@@ -70,7 +70,7 @@ Este proyecto implementa una infraestructura telemática robusta para sensar, tr
 
 ---
 
-## 🤖 Pipeline de Machine Learning
+## Pipeline de Machine Learning
 
 ### 1. Modelado Batch Offline
 Se compararon algoritmos de regresión supervisada para evaluar la correlación entre variables microclimáticas:
@@ -86,7 +86,7 @@ Para streaming en vivo sobre MQTT se utiliza un esquema híbrido:
 
 ---
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```text
 ├── .env.example                     # Plantilla de variables de entorno (MQTT, InfluxDB, etc.)
@@ -111,7 +111,7 @@ Para streaming en vivo sobre MQTT se utiliza un esquema híbrido:
 
 ---
 
-## 🚀 Despliegue y Ejecución
+## Despliegue y Ejecución
 
 ### Opción 1: Despliegue Completo con Docker Compose (Recomendado)
 
@@ -161,7 +161,7 @@ Servicios levantados:
 
 ---
 
-## 👥 Créditos y Autoría
+## Créditos y Autoría
 
 * **Autor:** Jose David Rodríguez Pinilla  
 * **Programa:** Ingeniería Telemática – Universidad Icesi  
